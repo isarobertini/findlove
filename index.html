@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.1/dist/aframe-extras.min.js" ></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+<script src="https://rawgit.com/gasolin/aframe-href-component/master/dist/aframe-href-component.min.js"></script>
+<!--This script is new-->
+<script>
+  // component declaration
+  AFRAME.registerComponent("mylink", {
+    // define a url in the schema
+    schema: {
+      href: {}
+    },
+    init: function() {
+      // when clicked - change the location:
+      this.el.addEventListener("click", (e) => {
+        window.location = this.data.href;
+      })
+    }
+  })
+</script>
+  </head>
+  <body>
+    <a-scene background="color: #A70000"
+    cursor="rayOrigin: mouse"
+         fog="type: exponential; density: 0.20; color: #F50029;"
+         animation="property: fog.color; dur: 7000;
+                   from:  #F50029; to:  #F50029;
+                   loop: indefinite; dir: alternate">
+
+  <a-light type="point" color="#F2032A" intensity="60" position="0 0 0"
+           animation="property: light.intensity;
+                      dur: 7000; from: 6; to: 10;
+                      dir: alternate; loop: true">
+
+  </a-light>
+
+  <a-assets>
+      <a-asset-item id="heart" src="https://cdn.glitch.global/d50892a0-112b-4e19-a8ae-fe90ec4d329c/scene.gltf?v=1647801161727"></a-asset-item>
+    </a-assets>
+
+    <a-entity position="0 -1 -2" gltf-model="#heart"
+              scale="4 4 4"
+              animation="property: rotation; dur: 10000;
+                         to: 0 360 0; loop: true">
+    </a-entity>
+
+
+  <a-text text="font: https://cdn.aframe.io/fonts/SourceCodePro.fnt; value: Click here to find love" color="#FB9B9B" position="-1 1.5 -1.2" scale="0.8 0.8 0.8"></a-text>
