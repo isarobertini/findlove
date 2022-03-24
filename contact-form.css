@@ -6,16 +6,16 @@
     margin: 0;
     font-family: -apple-system, Arial, sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
-    color: #212529;
-    text-align: left;
+    color: #E22727;
+    text-align: center;
     background-color: #fff;
     padding: 30px;
     padding-bottom: 10px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .fcf-form-group {
@@ -44,7 +44,7 @@
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border: 1px solid #E22727;
     outline: none;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -71,23 +71,23 @@ label.fcf-label {
 .fcf-credit {
     padding-top: 10px;
     font-size: 0.9rem;
-    color: #545b62;
+    color: #E22727;
 }
 
 .fcf-credit a {
-    color: #545b62;
+    color: #E22727;
     text-decoration: underline;
 }
 
 .fcf-credit a:hover {
-    color: #0056b3;
+    color: #E22727;
     text-decoration: underline;
 }
 
 .fcf-btn {
     display: inline-block;
     font-weight: 400;
-    color: #212529;
+    color: #E22727;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -111,7 +111,7 @@ label.fcf-label {
 }
 
 .fcf-btn:hover {
-    color: #212529;
+    color: #E22727;
     text-decoration: none;
 }
 
@@ -122,13 +122,13 @@ label.fcf-label {
 
 .fcf-btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #E22727;
+    border-color: #E22727;
 }
 
 .fcf-btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
+    background-color: #E22727;
     border-color: #0062cc;
 }
 
