@@ -3,7 +3,8 @@
 }
 
 .fcf-body {
-    margin: 0;
+    margin-left: 30%;
+    margin-right: 30%;
     font-family: -apple-system, Arial, sans-serif;
     font-size: 1rem;
     font-weight: 300;
@@ -13,7 +14,6 @@
     background-color: #fff;
     padding: 30px;
     padding-right: 30px
-    padding-bottom: 10px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     max-width: 100%;
